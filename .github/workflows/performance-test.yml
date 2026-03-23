@@ -1,0 +1,21 @@
+name: Performance Gate
+on: [push]
+
+jobs:
+  k6_test:
+    name: Run Load Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Start Infrastructure
+        run: docker-compose up -d
+
+      - name: Wait for App to be Ready
+        run: sleep 10
+
+      - name: Run k6 Test
+        uses: grafana/k6-action@v0.3.0
+        with:
+          filename: load-test.js
