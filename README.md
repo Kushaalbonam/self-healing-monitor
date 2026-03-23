@@ -52,11 +52,11 @@ pip install requests
 # 4. Start the Watchdog
 python watchdog.py
 
-📈 GitHub Actions Integration
-This repository includes a CI/CD pipeline in .github/workflows/performance.yml. On every push, GitHub:
+## 📈 GitHub Actions Integration
+## This repository includes a CI/CD pipeline in .github/workflows/performance.yml. On every push, GitHub:
 
-Provisions an Ubuntu runner.
+## Provisions an Ubuntu runner.
 
-Deploys the Dockerized environment.
+## Deploys the Dockerized environment.
 
-Executes a k6 load test to enforce performance SLAs.
+## Executes a k6 load test to enforce performance SLAs.
