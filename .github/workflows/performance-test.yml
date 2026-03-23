@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Start Infrastructure
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Wait for App to be Ready
         run: sleep 10
