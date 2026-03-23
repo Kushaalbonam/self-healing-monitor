@@ -39,17 +39,17 @@ Terminal showing the transition from 'App is healthy' to 'App is DOWN! Restartin
 ## 🔧 Setup & Installation
 
 ``bash
-# 1. Clone the repository
+#### 1. Clone the repository
 git clone <your-repo-link>
 
-# 2. Spin up the infrastructure
+#### 2. Spin up the infrastructure
 docker compose up -d
 
-# 3. Setup Python environment
+#### 3. Setup Python environment
 python -m venv venv
 source venv/bin/activate
 
-# 4. Install dependencies and start
+#### 4. Install dependencies and start
 pip install requests
 python watchdog.py
 
